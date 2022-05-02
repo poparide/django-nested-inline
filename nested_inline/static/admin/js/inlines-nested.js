@@ -469,7 +469,7 @@
         }
         return parseInt(max_forms);
     };
-})(django.jQuery);
+})((typeof window.jQuery == 'undefined' && typeof window.django != 'undefined')? django.jQuery : jQuery);
 
 
 // TODO:
